@@ -1,0 +1,104 @@
+
+  /* Remove the navbar's default margin-bottom and rounded borders */
+  .navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+  background-color: #555;
+
+  }
+
+  /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+  .row.content {
+    height: 450px
+  }
+
+  /* Set gray background color and 100% height */
+  .sidenav {
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    height: 100%;
+  }
+
+  /* Set black background color, white text and some padding */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    margin-top: 800px;
+  }
+
+  /* On small screens, set height to 'auto' for sidenav and grid */
+  @media screen and (max-width: 767px) {
+    .sidenav {
+      height: auto;
+      padding: 15px;
+    }
+    .row.content {height:auto;}
+  }
+  body {
+
+  	background-color:#d0d4db;background-repeat:no-repeat;
+  }
+  .select
+  {
+  	width: 200px;
+  	height:33px;
+  	/*margin-left:30px;*/
+  }
+
+  .date
+  {
+  	width: 130px;
+  	height:33px;
+  	/*margin-left:30px;*/
+  }
+
+  .number
+  {
+  	width: 50px;
+  	height:33px;
+  	/*margin-left:30px;*/
+  }
+
+  .search
+  {
+  	width: 100px;
+  	height:33px;
+  	margin-left:50px;
+    color:white;
+  	background-color: #008CBA;
+    border:1px solid #008CBA;
+    border-radius:20px;
+    opacity: 1;
+  }
+  .search:hover{
+  opacity:0.8;
+  outline: none;
+
+  }
+  #sortinglabel{
+   display : inline;
+   padding-right : 4px;
+
+  }
+
+  .btn {
+      position: relative;
+      top: -25px;
+      left:800px;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: black;
+      color: white;
+      font-size: 16px;
+      padding: 16px 30px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      text-align: center;
+  }
+
+  .btn:hover {
+      background-color: #E0DCDC;
+      color:white;
+  }

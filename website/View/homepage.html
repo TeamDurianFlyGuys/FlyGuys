@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>FlyGuys</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="https://fonts.goog  leapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="homepage.html" style="color:white">FlyGuys</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="SignIn.html"><span class="glyphicon glyphicon-log-in"></span> Signin</a></li>
+        <li><a href="SignUp.html"><span class="glyphicon glyphicon-user"></span>Signup</a></li>
+        <li><a href="Basket.html"><i class="fas fa-shopping-basket"></i></a></li>
+        <li><a href="Wishlist.html"><i class="far fa-heart"></i></a></li>
+        <li><a href="Notifications.html"><i class="fas fa-bell"></i></a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid text-center">
+  <form action="homepage_controller.php" method="post">
+  <div class="container">
+
+  <br>
+    <h1>Where would you like to Fly?</h1>
+
+  </div>
+    <br>
+    <div>
+         <label id="sortinglabel">From</label>
+         <select class="select" name="dptpoint">
+          <option value="Stansted" selected>Stansted</option>
+          <option value="Dublin">Dublin</option>
+          <option value="Glasgow">Glasgow</option>
+          <option value="Paris">Paris</option>
+          <option value="Manchester">Manchester</option>
+          <option value="Madrid">Madrid</option>
+          <option value="Brussels">Brussels</option>
+        </select>
+
+        <label id="sortinglabel">&nbsp;&nbsp;&nbsp;To&nbsp;&nbsp;</label>
+        <select class="select" name="despoint">
+          <option value="Stansted">Stansted</option>
+          <option value="Dublin">Dublin</option>
+          <option value="Glasgow">Glasgow</option>
+          <option value="Paris">Paris</option>
+          <option value="Manchester">Manchester</option>
+          <option value="Madrid">Madrid</option>
+          <option value="Brussels">Brussels</option>
+        </select>
+          <br><br>
+          <label class="radio-inline">
+            <input id="onewaydateid" type="radio" onclick="displayDates()" name="optradio" checked value="oneway">One way
+          </label><br>
+            <label class="radio-inline">
+              <input id="returndateid" type="radio" onclick="displayDates()"name="optradio" value="return">Round Trip
+            </label><br><br>
+        <label id="sortinglabel">Departure Date</label>
+        <input type="date" name="goingdate" required class="select" value="2018-04-09"/><br><br>
+        <div id="returndatediv" style="display:none">
+          <label>Return Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input type="date" name="returndate" required class="select" value="2018-04-12"/><br><br><br>
+        </div><br>
+        <button type="submit"class="search">Search</button>
+      </form>
+    </div>
+  </div>
+  <script>
+  function displayDates() {
+      if (document.getElementById("returndateid").checked == true) {
+        document.getElementById("returndatediv").style.display='block';
+      }
+      else if (document.getElementById("onewaydateid").checked == true) {
+        document.getElementById("returndatediv").style.display='none';
+      }
+      else {
+          // DO NOTHING
+          }
+      }
+
+  </script>
+
+<footer class="container-fluid text-center">
+  <nav role="navigation">
+    <div id= "sublinks_container">
+      <ul id= "sublinks">
+        <div class ="blocks"><a href="contactus.php">Contact Us</a></div>
+        <div class ="blocks"><a href="help.php">Help</a></div>
+      </ul>
+    </div>
+  </nav>
+  <div id= "copyright">
+    <p><small>&copy;2018 All Rights Reserved @FlyGuys </small></p>
+  </div>
+</footer>
+
+</body>
+</html>

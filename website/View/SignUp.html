@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>FlyGuys</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">FlyGuys</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="SignIn.html"><span class="glyphicon glyphicon-log-in"></span> Signin</a></li>
+        <li><a href="SignUp.html"><span class="glyphicon glyphicon-user"></span>Signup</a></li>
+        <li><a href="Basket.html"><i class="fas fa-shopping-basket"></i></a></li>
+        <li><a href="Wishlist.html"><i class="far fa-heart"></i></a></li>
+        <li><a href="Notifications.html"><i class="fas fa-bell"></i></a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid text-center">
+  <form action="viewFlights.php">
+  <div class="container">
+<br><br>
+<h2> Please enter your details to create a Fly Guys account.</h2>
+<br><br>
+<form method="post" action="results.php">
+  <label for="CustomerName"<b> Customer Name: </b> </br> </label>
+  <input name= "Customer Name"/><br/>
+</br>
+  <label for="DOB"<b> Date of Birth: </b> </br> </label>
+  <input name="DOB" type="date"/><br/>
+</br>
+  <label for="CustEmailAddress"<b> Email Address: </b> </br> </label>
+  <input name="CustEmailAddress"/><br/>
+</br>
+  <label for="MobileNum"<b> Mobile Number: </b> </br> </label>
+  <input name="MobileNum"/><br/>
+</br>
+  <label for="CustAddress"<b> Address: </b> </br> </label>
+  <input name="CustAddress"/></br>
+</br>
+ <label for="Password"<b> Password: </b> </br> </label>
+ <input name="Password" type="Password"/><br/>
+</br>
+ <label for="Re-TypePassword"<b> Re-Type Password: </b> </br> </label>
+ <input name="Re-TypePassword" type="Password"/><br/>
+</br>
+ <input type="submit"/>
+</form>
+<br><br>
+<footer class="container-fluid text-center">
+  <nav role="navigation">
+    <div id= "sublinks_container">
+      <ul id= "sublinks">
+        <div class ="blocks"><a href="contactus.php">Contact Us</a></div>
+        <div class ="blocks"><a href="help.php">Help</a></div>
+      </ul>
+    </div>
+  </nav>
+  <div id= "copyright">
+    <p><small>&copy;2018 All Rights Reserved @FlyGuys </small></p>
+  </div>
+</footer>
+
+</body>
+</html>
